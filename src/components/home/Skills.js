@@ -102,10 +102,10 @@ const frontendSkills = [
   {
     header: "frameworks",
     items: [
-      {
-        name: "Next.js",
-        icon: <Next />,
-      },
+      // {
+      //   name: "Next.js",
+      //   icon: <Next />,
+      // },
       {
         name: "React.js",
         icon: <React />,
