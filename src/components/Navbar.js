@@ -135,7 +135,7 @@ export default function Navbar({
           />
           <OptionButton
             width={"80px"}
-            name={"Certificates"}
+            name={"projects"}
             icon={faCertificate}
             onClick={() => executeScroll(certificateRef)}
             onMouseEnter={() => setIsCertificateHover(true)}

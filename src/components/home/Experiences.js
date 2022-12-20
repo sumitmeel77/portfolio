@@ -15,7 +15,7 @@ const experiences = [
     title: "Full Stack Developer",
     icon: faUserGraduate,
     archievement: "Internship",
-    description: "Worked on building frontend of the beta version of the product from scratch",
+    description: "Worked on building the beta version of product’s web user interface from scratch using Typescript, React js, React query, and Material ui . Created 15+ REST APIs using Fast Api and python for application and then integrated the backend with frontend. Tested the application by taking several test cases using Jest for frontend and Pytest for backend.",
     technologies: [
       "React.js",
       "Typescript",
@@ -28,7 +28,7 @@ const experiences = [
     title: "Frontend Developer",
     icon: faUserGraduate,
     archievement: "Internship",
-    description: "Developed several pages and feature for upscale website",
+    description: "Worked on building core product of upscale (sales engagement platform), by developing frontend for product using React js , javascript , CSS. Added several pages and feature to upscale website.Tested and improvised the app by taking several test cases under consideration and by resolving bugs",
     technologies: [
       "React.js", "Javascript" , "CSS"
     ],

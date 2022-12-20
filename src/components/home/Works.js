@@ -15,7 +15,7 @@ const projects = [
       "Socket.io",
     ],
     sourceCode: "https://github.com/sumitmeel77/Study_Buzz",
-    live: "",
+    live: "https://drive.google.com/file/d/1VbI2CvoFBatlaenV_hhKOM8YiA7Tcnm3/view",
     date: "03/2022",
 
     status: "archive",
@@ -50,9 +50,10 @@ const projects = [
       "React.js",
       "Redux",
       "News APi",
+      "Bootstrap"
     ],
     sourceCode: "https://github.com/sumitmeel77/Web_Application",
-    live: "",
+    live: "https://drive.google.com/file/d/17k7plMMPwPILQxpbodQqfeptHRe3Fw18/view?usp=share_link",
     date: "10/2021",
 
     status: "archive",
@@ -64,8 +65,9 @@ const projects = [
       "Clone of gihub issue page",
     img: "/images/github_page.png",
     tech: [
-      "react-router",
-      "redux"
+      "React js",
+      "React-router",
+      "Redux"
       ],
     sourceCode: "https://github.com/sumitmeel77/github-issue-page",
     live: "https://git-issues.netlify.com/",
@@ -78,7 +80,7 @@ const projects = [
     name: "Portfolio",
     description: "Personal portfolio",
     img: "/images/portfolio.png",
-    tech: ["Tailwind CSS", "EmailJS"],
+    tech: ["Tailwind CSS", "EmailJS" , "React js"],
     sourceCode: "",
     live: "",
     date: "",

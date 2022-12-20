@@ -17,17 +17,17 @@ import Linkedin from "../icons/Linkedin"
 import Bright from "../icons/Bright"
 
 const highlights = [
-  "Software Engineer",
-  2000,
   "Fullstack Developer",
   2000,
-  "Web Developer",
+  "Software Developer",
+  2000,
+  "Basketball Player",
   2000,
 ]
 
 const socials = [
   // {
-  //   url: "",
+  //   url: "sumitmeel77@gmail.com",
   //   icon: <Facebook />,
   // },
   {
@@ -94,15 +94,13 @@ export default function Hero({ darkMode, setDarkMode }) {
             <div className="flex md:space-x-5" data-aos="fade-up">
               <span className="h-0.5 w-10 mt-3 bg-black dark:bg-white hidden md:block"></span>
               <p className="w-full">
-                I'm a developer from India. I describe myself as a
-                passionate developer who loves coding and always learning about
-                new technologies.
+              I'm a dedicated programmer that takes great pleasure in developing software and is always curious to explore new tools and techniques.
               </p>
             </div>
             <div className="flex md:space-x-5" data-aos="fade-up">
               <span className="w-10 hidden md:block"></span>
               <p className="w-full">
-                In my spare time I often plays basketball, watch movies, and learn some new technologies.
+              Basketball, movies, and tinkering with gadgets are some of my go-to pastimes.
               </p>
             </div>
           </div>
@@ -112,12 +110,13 @@ export default function Hero({ darkMode, setDarkMode }) {
           >
             <div className="flex space-x-2 flex-wrap">
               <FontAwesomeIcon icon={faQuoteLeft} />
-              <p>Debugging becomes significantly easier</p>
-            </div>
-            <div className="flex space-x-2 flex-wrap">
-              <p>if you first admit that you are the problem.</p>
+              <p>Deleted code is debugged code</p>
               <FontAwesomeIcon icon={faQuoteRight} />
             </div>
+            {/* <div className="flex space-x-2 flex-wrap">
+              <p>if you first admit that you are the problem.</p>
+              <FontAwesomeIcon icon={faQuoteRight} />
+            </div> */}
           </div>
         </div>
         <div className="w-full flex justify-center space-x-6 md:space-x-20">

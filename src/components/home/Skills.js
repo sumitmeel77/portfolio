@@ -40,8 +40,8 @@ const backendSkills = [
     header: "languages",
     items: [
       {
-        name: "JavaScript",
-        icon: <JavaScript />,
+        name: "",
+        icon: "",
       },
       {
         name: "Python",
@@ -82,12 +82,12 @@ const frontendSkills = [
     header: "languages",
     items: [
       {
-        name: "HTML",
-        icon: <HTML />,
+        name: "Javascript",
+        icon: "",
       },
       {
-        name: "CSS",
-        icon: <CSS />,
+        name: "Typescript",
+        icon: "",
       },
       {
         name: "",
@@ -103,11 +103,11 @@ const frontendSkills = [
     header: "frameworks",
     items: [
       {
-        name: "Next.js",
+        name: "React.js",
         icon: <Next />,
       },
       {
-        name: "React.js",
+        name: "React Query",
         icon: <React />,
       },
     ],
@@ -120,7 +120,11 @@ const frontendSkills = [
         icon: <Tailwind />,
       },
       {
-        name: "",
+        name: "Bootstap",
+        icon: "",
+      },
+      {
+        name: "Material ui",
         icon: "",
       },
     ],
@@ -143,7 +147,7 @@ export default function Skills() {
       <p className="text-4xl font-bold">Skills</p>
       <div className="w-9/12 flex flex-col items-center space-y-20">
         <div className="h-full w-full flex flex-col justify-center space-y-16 divide-opacity-30 divide-white md:space-y-0 md:divide-x md:flex-row">
-          <DevSkills title="Backend Dev" skills={backendSkills} />
+          
           {/* <div className="h-full w-full flex flex-col items-center space-y-10">
             <div className="h-fit w-fit flex flex-col items-center space-y-5">
               <FontAwesomeIcon
@@ -156,10 +160,11 @@ export default function Skills() {
             <SkillItem icon={<Unity />} name="Unity" />
           </div> */}
           <DevSkills title="Frontend Dev" skills={frontendSkills} />
+          <DevSkills title="Backend Dev" skills={backendSkills} />
         </div>
         <span className="h-[0.5px] w-full bg-white bg-opacity-30 hidden md:block"></span>
-        <div className="w-full md:grid grid-cols-7 justify-center space-y-10 md:space-y-0 md:divide-x divide-opacity-30 divide-white">
-          <div className="h-full w-full flex flex-col items-center col-span-2 space-y-5" data-aos="zoom-in-right">
+        <div className="w-full md:grid grid-cols-9 justify-center space-y-10 md:space-y-0 md:divide-x divide-opacity-30 divide-white">
+          <div className="h-full w-full flex flex-col items-center col-span-3 space-y-5" data-aos="zoom-in-right">
             <div className="h-fit w-fit flex flex-col items-center space-y-5">
               <FontAwesomeIcon
                 icon={faCodeBranch}
@@ -180,10 +185,24 @@ export default function Skills() {
                 size="2x"
                 className="text-primary"
               />
-              <p className="text-xl font-bold">Hosting</p>
+              <p className="text-xl font-bold">Netlify</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-10 px-10">
               <SkillItem icon={<Heroku />} name="Heroku" />
+            </div>
+          </div>
+          <div className="h-full w-full flex flex-col items-center col-span-3 space-y-5"  data-aos="zoom-in-up">
+            <div className="h-fit w-fit flex flex-col items-center space-y-5">
+              <FontAwesomeIcon
+                icon={faCloud}
+                size="2x"
+                className="text-primary"
+              />
+              <p className="text-xl font-bold">Tools</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-10 px-10">
+            <SkillItem icon={<Heroku />} name="VS code" />
+              <SkillItem icon={<Heroku />} name="Postman" />
             </div>
           </div>
         </div>

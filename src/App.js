@@ -70,7 +70,7 @@ function App() {
             <Education />
           </section>
           <section ref={awardRef} className="h-full w-full">
-            <Awards awardRef={awardRef} />
+            {/* <Awards awardRef={awardRef} /> */}
           </section>
           <section ref={certificateRef} className="h-full w-full">
             <Certificates />

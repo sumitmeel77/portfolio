@@ -2,29 +2,23 @@ import Button from "../Button"
 import Input from "../Input"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import axios from "axios"
 import React, { useEffect, useRef, useState } from "react"
-import ReCAPTCHA from "react-google-recaptcha"
 import emailjs from "@emailjs/browser"
 
 export default function Contact() {
-  const captchaRef = useRef(null)
 
   const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [isLoading, setIsLoading] = useState(false)
   const [isEmailError, setIsEmailError] = useState(false)
   const [isSendDisable, setIsSendDisable] = useState(true)
-  const [isReCaptchaVerified, setIsReCaptchaVerified] = useState(false)
 
   useEffect(() => {
     checkForm()
-  }, [form, isReCaptchaVerified])
+  }, [form ])
 
   const checkForm = () => {
-    const pattern =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-    if (!pattern.test(form.email) && form.email?.length != 0)
+    if (form.email?.length != 0)
       setIsEmailError(true)
     else setIsEmailError(false)
 
@@ -32,20 +26,10 @@ export default function Contact() {
       form.name.length != 0 &&
       form.email.length != 0 &&
       form.message.length != 0 &&
-      !isEmailError &&
-      isReCaptchaVerified
+      !isEmailError
     )
       setIsSendDisable(false)
     else setIsSendDisable(true)
-  }
-
-  const verifyRecaptcha = async () => {
-    await axios
-      .post("/api/send", { token: captchaRef.current.getValue() })
-      .then((res) => {
-        console.log(res)
-        setIsReCaptchaVerified(res.data)
-      })
   }
 
   const sendHandler = async (e) => {
@@ -82,7 +66,7 @@ export default function Contact() {
         username: "Sumit Meel",
         attachments: [],
       }
-      await axios.post(process.env.DISCORD_WEBHOOK, payload)
+      // await axios.post(process.env.DISCORD_WEBHOOK, payload)
 
       emailjs
         .send(
@@ -93,7 +77,7 @@ export default function Contact() {
         )
         .then((result) => {
           console.log(result)
-          captchaRef.current.reset()
+          // captchaRef.current.reset()
           setIsLoading(false)
         })
     } catch (error) {
@@ -150,13 +134,6 @@ export default function Contact() {
               placeholder="Message"
               onChange={(e) => setForm({ ...form, message: e.target.value })}
             />
-            {/* <div className="w-full flex justify-center">
-              <ReCAPTCHA
-                sitekey={process.env.RECAPTCHA_SITE_KEY}
-                ref={captchaRef}
-                onChange={verifyRecaptcha}
-              />
-            </div> */}
           </div>
           <Button
             title={"Send Message"}
