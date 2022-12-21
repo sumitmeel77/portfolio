@@ -2,34 +2,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCloud, faCodeBranch } from "@fortawesome/free-solid-svg-icons"
 import Express from "../icons/Express"
 import SkillItem from "../skills/SkillItem"
-import SpringBoot from "../icons/SpringBoot"
-import Nest from "../icons/Nest"
 import Node from "../icons/Node"
-import Firebase from "../icons/Firebase"
 import JavaScript from "../icons/JavaScript"
-import Solidity from "../icons/Solidity"
+import TypeScript from "../icons/TypeScript"
 import Python from "../icons/Python"
-import Java from "../icons/Java"
-import CSharp from "../icons/CSharp"
 import Tailwind from "../icons/Tailwind"
-import Kotlin from "../icons/Kotlin"
 import DevSkills from "../skills/DevSkills"
-import Flutter from "../icons/Flutter"
-import Next from "../icons/Next"
 import React from "../icons/React"
-import Nuxt from "../icons/Nuxt"
-import SQLite from "../icons/SQLite"
 import HTML from "../icons/HTML"
 import Heroku from "../icons/Heroku"
 import CSS from "../icons/CSS"
 import MongoDB from "../icons/MongoDB"
-import Web3 from "../icons/Web3"
-import Vercel from "../icons/Vercel"
 import MySQL from "../icons/MySQL"
 import GitHub from "../icons/GitHub"
 import GitLab from "../icons/GitLab"
 import GitHubPages from "../icons/GitHubPages"
-import Headless from "../icons/Headless"
 import { useEffect } from "react"
 import AOS from "aos"
 
@@ -83,11 +70,11 @@ const frontendSkills = [
     items: [
       {
         name: "Javascript",
-        icon: "",
+        icon: <JavaScript/>,
       },
       {
         name: "Typescript",
-        icon: "",
+        icon: <TypeScript/>,
       },
       {
         name: "",
@@ -104,7 +91,7 @@ const frontendSkills = [
     items: [
       {
         name: "React.js",
-        icon: <Next />,
+        icon: <React />,
       },
       {
         name: "React Query",
@@ -121,11 +108,11 @@ const frontendSkills = [
       },
       {
         name: "Bootstap",
-        icon: "",
+        icon: <i className ="fa-brands fa-bootstrap"></i>,
       },
       {
         name: "Material ui",
-        icon: "",
+        icon: <Tailwind />,
       },
     ],
   },

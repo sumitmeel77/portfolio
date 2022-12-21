@@ -1,4 +1,3 @@
-import Webring from "../icons/Webring"
 import {
   faDownload,
   faMoon,

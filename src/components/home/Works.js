@@ -41,7 +41,7 @@ const projects = [
       "MongoDB",
     ],
     sourceCode: "https://github.com/sumitmeel77/MERN-Ecommerce",
-    live: "",
+    live: "https://drive.google.com/file/d/1VYwawoLzSvQlMXIXR6GtoKIBAZAkc4E4/view",
     date: "11/2021",
 
     status: "archive",
