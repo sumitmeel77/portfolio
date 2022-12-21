@@ -17,6 +17,7 @@ import useOnScreen from "../lib/useOnScreen"
 import Scrollbar from "./SmoothScroll"
 import OptionButton from "./navbar/OptionButton"
 import Bright from "./icons/Bright"
+import resume from "../images/resume.pdf"
 
 export default function Navbar({
   opacity,
@@ -173,7 +174,7 @@ export default function Navbar({
             {darkMode ? <FontAwesomeIcon icon={faMoon} /> : <Bright width={20} height={20}/>}
           </button>
           <a
-            href="/resume.pdf"
+            href={resume}
             rel="noreferrer"
             target="_blank"
             className="h-full flex items-center justify-center px-5 space-x-3 transition-all duration-300 ease-in-out hover:text-primary"

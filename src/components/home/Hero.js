@@ -15,6 +15,8 @@ import GitLab from "../icons/GitLab"
 import TiltPhaseSix from "../TiltPhase"
 import Linkedin from "../icons/Linkedin"
 import Bright from "../icons/Bright"
+import sumit from "../../images/sumit.png"
+import resume from "../../images/resume.pdf"
 
 const highlights = [
   "Fullstack Developer",
@@ -60,7 +62,7 @@ export default function Hero({ darkMode, setDarkMode }) {
             }}
           >
             <img
-              src="/images/sumit.png"
+              src={sumit}
               alt=""
               className="h-full w-full object-contain"
             />
@@ -125,7 +127,7 @@ export default function Hero({ darkMode, setDarkMode }) {
           ))}
         </div>
         <a
-          href="/resume.pdf"
+          href={resume}
           target={"_blank"}
           className="h-12 p-5 space-x-3 flex items-center justify-center rounded-xl font-bold group transition ease-in-out duration-500 shadow-md text-black bg-primary hover:scale-110"
         >

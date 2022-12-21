@@ -1,11 +1,16 @@
 import Projects from "../Projects"
+import study_buzzI from "../../images/study_buzz.png"
+import MernEcommerce from "../../images/MernEcommerce.png"
+import news from "../../images/news.png"
+import github_page from "../../images/github_page.png"
+import portfolio from "../../images/portfolio.png"
 
 const projects = [
   {
     name: "Study Buzz",
     description:
       "Study Buzz ia a all-in-one solution for group study and peer study.",
-    img: "/images/study_buzz.png",
+    img: study_buzzI,
     tech: [
       "React.js",
       "Node.js",
@@ -25,7 +30,7 @@ const projects = [
     name: "AproKart webapp",
     description:
       "Developed a full stack e-commerce website for buyers and admin application for sellers with different admin hierarchy levels using MERN stack",
-    img: "/images/MernEcommerce.png",
+    img: MernEcommerce,
     tech: [
       "React.js",
       "Redux",
@@ -45,7 +50,7 @@ const projects = [
     name: "News Webapp",
     description:
       "Developed a news application where user can authenticate and can get daily real time updated news of different domains.",
-    img: "/images/news.png",
+    img: news,
     tech: [
       "React.js",
       "Redux",
@@ -63,7 +68,7 @@ const projects = [
     name: "Github-issue-page",
     description:
       "Clone of gihub issue page",
-    img: "/images/github_page.png",
+    img: github_page,
     tech: [
       "React js",
       "React-router",
@@ -79,7 +84,7 @@ const projects = [
   {
     name: "Portfolio",
     description: "Personal portfolio",
-    img: "/images/portfolio.png",
+    img: portfolio,
     tech: ["Tailwind CSS", "EmailJS" , "React js"],
     sourceCode: "",
     live: "",
